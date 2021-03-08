@@ -86,7 +86,7 @@ class HtmlWebpackPrerenderPlugin {
     } catch (e) {
       throw new Error(`${errorLabel} Error evaluating your app script.\n${e}`);
     }
-
+    
     try {
       rendered = await app.default(props);
     } catch (e) {
